@@ -1,0 +1,48 @@
+* { box-sizing: border-box; margin: 0; }
+
+:root {
+  --brand: #2f6f6a;
+  --bg: #f4f4f0;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  padding: 40px;
+}
+
+.cards {                    /* 카드들을 감쌀 컨테이너 (7장에서 사용) */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* 그림자로 떠보이게 */
+  transition: transform 0.2s;              /* 부드러운 움직임 */
+}
+
+.card:hover {                          /* 마우스를 올리면 */
+  transform: translateY(-6px);         /* 살짝 위로 떠오름 */
+}
+
+.card img {
+  border-radius: 50%;                  /* 원형 프로필 */
+}
+
+.card .role {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: #eee;
+}
+body.dark .card { background: #2b2b2b; }
