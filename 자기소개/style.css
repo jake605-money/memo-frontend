@@ -46,3 +46,26 @@ body.dark {
   color: #eee;
 }
 body.dark .card { background: #2b2b2b; }
+
+/* 헤더 내부 링크 스타일 추가 */
+.project-links {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.project-links p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.project-links a {
+  color: #3b82f6;
+  text-decoration: none;
+  word-break: break-all; /* 주소가 길어 모바일에서 깨지는 현상 방지 */
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
